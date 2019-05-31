@@ -1,0 +1,17 @@
+why does the prefetch act the way it does?
+
+start with something more basic and watch how it works, build your way up to get clarity.
+write expectations and record results. It could be even that blog post is outdated.
+
+HYPOTHESES
+
+If I sync the device there will be no page faults
+  FALSE: There are several reasons
+    - second copy is on busy stream, which tf gets deferred
+    - more pertinently, copy will return as cpu pages are xfered
+
+If I run the multiple inits in their own streams, they will overlap and there will be fewer page faults
+  I actually don't think this is true after all since we can still only be sending one copy at a time
+
+
+WTF: in the blog post it looks like memPrefetchAsync is being called twice, for the 2 arrays, and that there are no page faults. I must try to duplicate.
