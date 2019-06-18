@@ -1,4 +1,4 @@
-UESTC-《Parallel and Distributed Computing》Course Experiment-Nvidia CUDA Course on http://courses.nvidia.com/dli-event 
+UESTC-《Parallel and Distributed Computing》Course Experiment-Nvidia CUDA Course on https://courses.nvidia.com/courses/course-v1:DLI+C-AC-01+V1-ZH/info 
 
 
 03-09:nbody-MySolution:
